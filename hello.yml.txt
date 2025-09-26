@@ -1,0 +1,11 @@
+name: Hello Action
+
+# Run this workflow whenever someone pushes code
+on: push
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest  # run on a Linux machine
+    steps:
+      - name: Print greeting
+        run: echo "Hello GitHub Actions!"
